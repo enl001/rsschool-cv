@@ -3,7 +3,7 @@
 
 ### Personal details ###
 
-<img align="right" width="150" height="150" src="/Images/Me.jpg" alt="me">
+<img align="right" width="150" height="150" src="https://github.com/enl001/rsschool-cv/blob/gh-pages/Images/Me.jpg" alt="Me">
 
 **Name              :** Viachaslau Shabaltsiyeu
 
