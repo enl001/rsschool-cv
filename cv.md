@@ -1,52 +1,58 @@
-## Web developer ##
-### Resume ###
+<div align="center">## Web developer ##</div>
+<div align="center">### Resume ###</div>
 
-<img align="right" width="100" height="100" src="\Images\Me.jpg" alt="me">
+<img align="right" width="100" height="100" src="/Images/Me.jpg" alt="me">
 
-1. #### Personal details ####
+1. ### Personal details ###
 **Name              :** Viachaslau Shabaltsiyeu
+
 **E-mail            :** enliven001@mail.ru
+
 **Telephone Number  :** +375 (29) 253-02-96
+
 **GitHub            :** [my GitHub](https://github.com/enl001)
 
--------------------------------------------------------------
-2. #### Objective & Summary ####
 
+-------------------------------------------------------------
+1. ### Objective & Summary ###
 Start a career as a web developer in EPAM Systems and in 5 years become an Engineering Lead/ Team Lead.
 
 - Five years of special software and embedded systems software development experience
 - Proficient in an assortment of languages and technologies, including C#/C++, JavaScript, TypeScript, SQL,  ASP.Net, Angular
 - I have good analytical skills and experience in conducting scientific research
 
-##### Hobby #####
+#### Hobby ####
 
 - Mountain hiking
 - Photography
 
 ---------------------------------------------------------------
-3. #### Skills ####
+1. ### Skills ###
 
-- **C#**         ++
-- **Asp.Net**    +
-- **HTML5**      +
-- **CSS3**       +
-- **JavaScript** +
-- **TypeScript** +
-- **Angular 2+** +
-- **Agile**      +
-- **Git**        +
+Lang/ Tech | Skill
+---------------------
+**C#**         | ++
+**Asp.Net**    | +
+**HTML5**      | +
+**CSS3**       | +
+**JavaScript** | +
+**TypeScript** | +
+**Angular 2+** | +
+**Agile**      | +
+**Git**        | +
 
 -----------------------------------------------------------------
-4. #### Experience ####
+1. ### Experience ###
 
-- "Object-Oriented Programming Fundamentals in C#" course
-- "Building a Web App with ASP.NET Core, MVC, Entity Framework Core, Bootstrap, and Angular" course
-- "LINQ Fundamentals" course
+- "Object-Oriented Programming Fundamentals in C#" (course)
+- "Building a Web App with ASP.NET Core, MVC, Entity Framework Core, Bootstrap, and Angular" (course)
+- "LINQ Fundamentals" (course)
 - [Codewars](https://www.codewars.com/users/enl001)
 
-> [Codewars "Strings Mix"](https://www.codewars.com/kata/5629db57620258aa9d000014) 
+#### Some code examples ####
 
-````
+> [Codewars "Strings Mix"](https://www.codewars.com/kata/5629db57620258aa9d000014)
+```c#
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -86,9 +92,9 @@ public class Mixing
     return string.Join("/",result);
   }
 }
-````
+```
 > [Codewars "Sort the odd"](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d)
-````
+```javascript
 function sortArray(array) {
   let odd = [];
   for(const n of array)
@@ -103,27 +109,26 @@ function sortArray(array) {
   }
   return array;
 }
-````
+```
 
-##### Working experience #####
+#### Working experience ####
 
 - 2014 - Present  : Researcher
 - 2012 - 2014     : Junior Researcher
 
-##### Other skills #####
+#### Other skills ####
 
-- Experienced in such software package as MATLAB.
+- Experienced in such software packages as MATLAB, Mathcad.
 
 -----------------------------------------------------------------
-5. #### Education ####
+1. ### Education ###
 
-- 2012  Researcher. Military Academy of the Republic of Belarus
-- 2009  Master of Engineering. Military Academy of the Republic of Belarus
-- 2008  Engineer. Telecommunication systems. Military Academy of the Republic of Belarus
+- 2012:  Researcher. Military Academy of the Republic of Belarus
+- 2009:  Master of Engineering. Military Academy of the Republic of Belarus
+- 2008:  Engineer. Telecommunication systems. Military Academy of the Republic of Belarus
 
 ------------------------------------------------------------------
-6. #### English ####
+1. ### English ###
 
-State cultural and leisure institution "Central House of Officers of the Armed Forces of the Republic of Belarus". "FCE" program (1136 class hours). 2011
-
-A2+ EPAM Training Center Test (19.01.2020)
+- A2+ EPAM Training Center Test (19.01.2020)
+- State cultural and leisure institution "Central House of Officers of the Armed Forces of the Republic of Belarus". "FCE" program (1136 class hours). 2011
