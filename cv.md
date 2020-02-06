@@ -1,9 +1,10 @@
-<div align="center">## Web developer ##</div>
-<div align="center">### Resume ###</div>
+<div align="center"><h1>Web developer</h1></div>
+<div align="center"><h2>Resume</h2></div>
 
-<img align="right" width="100" height="100" src="/Images/Me.jpg" alt="me">
+### Personal details ###
 
-1. ### Personal details ###
+<img align="right" width="150" height="150" src="/Images/Me.jpg" alt="me">
+
 **Name              :** Viachaslau Shabaltsiyeu
 
 **E-mail            :** enliven001@mail.ru
@@ -14,7 +15,7 @@
 
 
 -------------------------------------------------------------
-1. ### Objective & Summary ###
+### Objective & Summary ###
 Start a career as a web developer in EPAM Systems and in 5 years become an Engineering Lead/ Team Lead.
 
 - Five years of special software and embedded systems software development experience
@@ -27,10 +28,10 @@ Start a career as a web developer in EPAM Systems and in 5 years become an Engin
 - Photography
 
 ---------------------------------------------------------------
-1. ### Skills ###
+### Skills ###
 
-Lang/ Tech | Skill
----------------------
+Lang/ Tech  | Skill
+------------|---------
 **C#**         | ++
 **Asp.Net**    | +
 **HTML5**      | +
@@ -42,7 +43,7 @@ Lang/ Tech | Skill
 **Git**        | +
 
 -----------------------------------------------------------------
-1. ### Experience ###
+### Experience ###
 
 - "Object-Oriented Programming Fundamentals in C#" (course)
 - "Building a Web App with ASP.NET Core, MVC, Entity Framework Core, Bootstrap, and Angular" (course)
@@ -121,14 +122,14 @@ function sortArray(array) {
 - Experienced in such software packages as MATLAB, Mathcad.
 
 -----------------------------------------------------------------
-1. ### Education ###
+### Education ###
 
 - 2012:  Researcher. Military Academy of the Republic of Belarus
 - 2009:  Master of Engineering. Military Academy of the Republic of Belarus
 - 2008:  Engineer. Telecommunication systems. Military Academy of the Republic of Belarus
 
 ------------------------------------------------------------------
-1. ### English ###
+### English ###
 
 - A2+ EPAM Training Center Test (19.01.2020)
 - State cultural and leisure institution "Central House of Officers of the Armed Forces of the Republic of Belarus". "FCE" program (1136 class hours). 2011
