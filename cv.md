@@ -3,7 +3,7 @@
 
 ### Personal details ###
 
-<img align="right" width="150" height="150" src="https://github.com/enl001/rsschool-cv/blob/gh-pages/Images/Me.jpg" alt="Me">
+<img align="right" width="150" height="150" src="Images/Me.jpg" alt="Me">
 
 **Name              :** Viachaslau Shabaltsiyeu
 
@@ -53,6 +53,7 @@ Lang/ Tech  | Skill
 #### Some code examples ####
 
 > [Codewars "Strings Mix"](https://www.codewars.com/kata/5629db57620258aa9d000014)
+
 ```c#
 using System;
 using System.Collections.Generic;
@@ -94,7 +95,9 @@ public class Mixing
   }
 }
 ```
+
 > [Codewars "Sort the odd"](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d)
+
 ```javascript
 function sortArray(array) {
   let odd = [];
@@ -119,7 +122,7 @@ function sortArray(array) {
 
 #### Other skills ####
 
-- Experienced in such software packages as MATLAB, Mathcad.
+- Experienced in such software packages as MATLAB, Mathcad
 
 -----------------------------------------------------------------
 ### Education ###
