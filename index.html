@@ -1,11 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Resume</title>
   </head>
   <body>
+    <header class="header">
+      <div class="wrapper">
+        <nav class="header-navigation">
+          <ul class="navigation-list">
+              <li class=""><a href="#">Personal details</a></li>
+              <li class=""><a href="#">Objective & Summary</a></li>
+              <li class=""><a href="#">Skills</a></li>
+              <li class=""><a href="#">Education</a></li>
+              <li class=""><a href="#">English</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <section class="personal-details">
+        <div class="wrapper">
+          <h3>Personal details</h3>
+          <div class="layout-2-column">
+            <div class="key-column">
+              <p>Name:</p>
+              <p>E-mail:</p>
+              <p>Telephone Number:</p>
+              <p>GitHub:</p>
+            </div>
+            <div class="value-column">
 
+              <p>Viachaslau Shabaltsiyeu</p>
+              <p><a href="tel:+375292530296">+375 (29) 253-02-96</a></p>
+              <p><a href="mailto:enliven001@mail.ru">enliven001@mail.ru</a></p>
+              <p><a href="https://github.com/enl001">my GitHub</a></p>
+            </div>
+          </div>
+          <img src="Images/Me.jpg" alt="me" width="150" height="150">
+        </div>
+      </section>
+
+      <section class="objective-summary">
+        <div class="wrapper">
+          <h3>Objective & Summary</h3>
+          <p>Start a career as a web developer in EPAM Systems and in 5 years become an Engineering Lead/ Team Lead.</p>
+          <ul class="list">
+            <li>Five years of special software and embedded systems software development experience</li>
+            <li>Proficient in an assortment of languages and technologies, including C#/C++, JavaScript, TypeScript, SQL, ASP.Net, Angular</li>
+            <li>I have good analytical skills and experience in conducting scientific research</li>
+          </ul>
+          <h4>Hobby</h4>
+          <ul class="list">
+            <li>Mountain hiking</li>
+            <li>Photography</li>
+          </ul>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="wrapper">
+          <h3>Skills</h3>
+          <table class="table">
+            <thead class="table-head">
+              <tr>
+                <th>Lang / Tech</th>
+                <th>Skill</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td>C#</td>
+                <td>++</td>
+              </tr>
+              <tr>
+                <td>Asp.Net</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>HTML5</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>CSS3</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>JavaScript</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>TypeScript</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>Angular 2+</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>Agile</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>Git</td>
+                <td>+</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="experience">
+        <div class="wrapper">
+          <h3>Experience</h3>
+          <ul class="list">
+            <li>“Object-Oriented Programming Fundamentals in C#” (course)</li>
+            <li>“Building a Web App with ASP.NET Core, MVC, Entity Framework Core, Bootstrap, and Angular” (course)</li>
+            <li>“LINQ Fundamentals” (course)</li>
+            <li><a href="https://www.codewars.com/users/enl001">Codewars</a></li>
+          </ul>
+          <h4>Some code examples</h4>
+          <p><a href="https://www.codewars.com/kata/5629db57620258aa9d000014">Codewars “Strings Mix”</a></p>
+
+            <code>
+              using System;
+              using System.Collections.Generic;
+              using System.Linq;
+              using System.Text.RegularExpressions;
+
+              public class Mixing
+              {
+                public static string Mix(string s1, string s2)
+                {
+                  s1 = Regex.Replace(s1, "[^a-z]", "");
+                  s2 = Regex.Replace(s2, "[^a-z]", "");
+                  var s1Unic = s1.Distinct().OrderBy(c => c);
+                  var s2Unic = s2.Distinct().OrderBy(c => c);
+                  var merge = s1Unic.Concat(s2Unic).Distinct().OrderBy(c => c);
+                  var sCountChar = new List<string>();
+
+                  foreach (var c in merge)
+                  {
+                    var count1 = s1.Where(s => s == c).Count();
+                    var count2 = s2.Where(s => s == c).Count();
+
+                    if (count1 <= 1 && count2 <= 1) continue;
+                    if (count1 > count2) sCountChar.Add($"1:{count1}{string.Concat(Enumerable.Repeat(c,count1))}");
+                    if (count1 < count2) sCountChar.Add($"2:{count2}{string.Concat(Enumerable.Repeat(c, count2))}");
+                    if (count1 == count2) sCountChar.Add($"3:{count1}{string.Concat(Enumerable.Repeat(c, count1))}");
+                  }
+                  sCountChar = sCountChar.OrderByDescending(s => s.Substring(2, 1))
+                                         .ThenBy(c => c.Substring(0, 1)).ToList();
+
+                  var result = new List<string>();
+                  foreach (var item in sCountChar)
+                  {
+                    var r = item;
+                    r = r.Replace("3", "=");
+                    result.Add(r.Remove(2, 1));
+                  }
+                  return string.Join("/",result);
+                }
+              }
+            </code>
+
+          <p><a href="https://www.codewars.com/kata/578aa45ee9fd15ff4600090d">Codewars “Sort the odd”</a></p>
+
+            <code>
+              function sortArray(array) {
+                let odd = [];
+                for(const n of array)
+                {
+                  if(n%2!==0) odd.push(n);
+                }
+                odd.sort((a,b)=>{return a-b});
+                let k=0;
+                for(let i= 0; i < array.length; i++)
+                {
+                  if(array[i]%2!==0) {array[i]=odd[k]; k++;}
+                }
+                return array;
+              }
+            </code>
+
+          <h4>Working experience</h4>
+          <div class="layout-2-column">
+            <div class="key-column">
+              <p>2014 - Present:</p>
+              <p>2012 - 2014:</p>
+            </div>
+            <div class="value-column">
+              <p>Researcher</p>
+              <p>Junior Researcher</p>
+            </div>
+          </div>
+        </div>
+        <h4>Other skills</h4>
+        <p>Experienced in such software packages as MATLAB, Mathcad</p>
+      </section>
+      <section class="education">
+        <div class="wrapper">
+          <h3>Education</h3>
+          <div class="layout-2-column">
+            <div class="key-column">
+              <p>2012:</p>
+              <p>2009:</p>
+              <p>2008:</p>
+            </div>
+            <div class="value-column">
+              <p>Researcher. Military Academy of the Republic of Belarus</p>
+              <p>Master of Engineering. Military Academy of the Republic of Belarus</p>
+              <p>Engineer. Telecommunication systems. Military Academy of the Republic of Belarus</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="english">
+        <div class="wrapper">
+          <h3>English</h3>
+          <ul class="list">
+            <li>A2+ EPAM Training Center Test (19.01.2020)</li>
+            <li>State cultural and leisure institution “Central House of Officers of the Armed Forces of the Republic of Belarus”. “FCE” program (1136 class hours). 2011</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+<footer class="footer">
+
+</footer>
   </body>
 </html>
