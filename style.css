@@ -1,0 +1,290 @@
+* {box-sizing:border-box}
+
+html {
+  font-size: 10px;
+  color: rgb(30, 30, 30);
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Open Sans', Verdana, sans-serif;
+}
+.background-wrapper {
+  max-width: 1024px;
+  min-width: 425px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: rgb(240, 250, 255);
+}
+
+.main {
+  padding: 4em 0 2em 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  max-width: 1024px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+h3 {
+  margin-top: 0;
+  width: 70%;
+  padding: 0.5em 1em;
+  background-color: rgb(220, 240, 250);
+  border: 2px solid rgb(170, 220, 250);
+  border-radius: 0.5em;
+}
+
+section {
+  padding: 0 15px;
+}
+
+nav {
+  height: 4em;
+  background-color: rgb(220, 240, 250);
+  border: 3px solid rgb(170, 220, 250);
+  border-radius: 0.5em;
+}
+
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  height: 0;
+  content: "";
+  clear: both;
+}
+
+.navigation-list {
+  z-index: 5;
+  list-style-type: none;
+}
+
+.navigation-list a {
+  float: left;
+  margin-right: 3%;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+
+.navigation-list a:hover {
+  text-decoration: underline;
+  color: rgb(30, 30, 200);
+}
+
+main a {
+  text-decoration: none;
+  color: rgb(30, 30, 30);
+}
+main a:hover {
+  text-decoration: underline;
+  color: rgb(30, 30, 200);
+}
+
+
+.local-anchor {
+  position: relative;
+  top: -4em;
+}
+
+.text-emphasized {
+  margin-right: 1em;
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+}
+
+.title {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.layout-3-column {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  padding: 0 15px;
+}
+
+.personal-key-column {
+  flex: initial;
+  margin-right: 1em;
+}
+
+.personal-key-column-short {
+  flex: initial;
+  margin-right: 1em;
+  display: none;
+}
+@media (max-width:480px) {
+  .personal-key-column {
+    display: none;
+  }
+  .personal-key-column-short {
+    display: initial;
+    flex: initial;
+    margin-right: 1em;
+  }
+}
+
+.personal-value-column {
+  flex: auto;
+  margin-right: 1em;
+}
+
+.personal-image-column {
+  flex: none;
+  margin-top: 0.5em;
+}
+
+.objective-summary {
+  text-align: justify;
+}
+
+.objective-summary p:first-of-type {
+  padding-left: 15px;
+}
+ul {
+  padding-right: 15px;
+}
+
+.layout-2-column {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills {
+  margin-bottom: 1em;;
+}
+.skills .layout-2-column p {
+  margin: 0;
+  padding: 5px 0;
+  font-weight: bold;
+  color: rgb(30, 30, 30);
+}
+.skill-column{
+  flex: 50%;
+  min-width: 300px;
+  padding: 0 15px;
+}
+
+.skill-bar-background {
+position: relative;
+height: 2em;
+width: 100%;
+background-color: rgb(226, 226, 226);
+border-radius: 0.5em;
+}
+
+.skill-bar {
+position: absolute;
+top: 50%;
+height: 70%;
+-ms-transform: translateY(-50%);
+transform: translateY(-50%);
+
+margin: 0;
+padding-right: 1em;
+
+text-align: right;
+
+background-color: rgb(220, 240, 250);
+border: 2px solid rgb(170, 220, 250);
+border-radius: .5em;
+}
+
+.skill-csharp {
+  width: 60%;
+}
+.skill-asp {
+  width: 40%;
+}
+.skill-html {
+  width: 40%;
+}
+.skill-css {
+  width: 30%;
+}
+.skill-js {
+  width: 35%;
+}
+.skill-ts {
+  width: 35%;
+}
+.skill-angular {
+  width: 35%;
+}
+.skill-agile {
+  width: 20%;
+}
+.skill-git {
+  width: 50%;
+}
+
+.code-examples {
+ padding: 0 15px;
+}
+.working-experience{
+  padding: 0 15px;
+}
+
+.education p {
+  padding: 0 15px;
+}
+
+pre {
+  display: block;
+
+  max-width: 100%;
+  margin-bottom: 1em;
+  padding: 1em 1.5em;
+
+  font-family: monospace;
+  font-size: .8em;
+  color:rgb(53, 53, 53);
+  overflow: auto;
+  line-height: 1.2;
+  word-wrap: break-word;
+  page-break-inside: avoid;
+
+  background:rgb(220, 240, 250);
+  border: 1px solid rgb(170, 220, 250);
+  border-left: 3px solid rgb(170, 220, 250);
+  border-radius: 0.5em;
+}
+
+.key-column {
+  flex: initial;
+  margin-right: 1em;
+}
+.value-column {
+  flex: auto;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+  height: 2em;
+
+  margin: 0 auto;
+  padding: 0 1em;
+  max-width: 1024px;
+  width: 90%;
+
+  text-align: left;
+
+  background-color: rgb(220, 240, 250);
+  border: 3px solid rgb(170, 220, 250);
+  border-radius: .5em;
+}
+
+footer p {
+  position: absolute;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
