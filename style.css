@@ -42,7 +42,6 @@ h3 {
 }
 
 section {
-  margin: 1em 0 0 0;
   padding: 0 15px;
 }
 
@@ -162,6 +161,9 @@ ul {
   flex-wrap: wrap;
 }
 
+.skills {
+  margin-bottom: 1em;;
+}
 .skills .layout-2-column p {
   font-weight: bold;
   color: rgb(30, 30, 30);
