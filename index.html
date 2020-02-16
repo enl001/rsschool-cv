@@ -8,44 +8,53 @@
     <title>Resume</title>
   </head>
   <body>
-    <header class="header">
-      <div class="wrapper">
-        <nav class="header-navigation">
+    <div class="background-wrapper">
+    <header>
+        <nav class="header-navigation clearfix">
           <ul class="navigation-list">
-              <li class=""><a href="#">Personal details</a></li>
-              <li class=""><a href="#">Objective & Summary</a></li>
-              <li class=""><a href="#">Skills</a></li>
-              <li class=""><a href="#">Education</a></li>
-              <li class=""><a href="#">English</a></li>
+              <li class="navigation-list-item"><a href="#personal-details">Personal details</a></li>
+              <li class="navigation-list-item"><a href="#summary">Objective & Summary</a></li>
+              <li class="navigation-list-item"><a href="#skills">Skills</a></li>
+              <li class="navigation-list-item"><a href="#experience">Experience</a></li>
+              <li class="navigation-list-item"><a href="#education">Education</a></li>
+              <li class="navigation-list-item"><a href="#english">English</a></li>
           </ul>
         </nav>
-      </div>
     </header>
+
     <main class="main">
+      <section class="title">
+          <h1>Web developer</h1>
+          <h2>Resume</h2>
+      </section>
+      <span class="local-anchor" id="personal-details"></span>
       <section class="personal-details">
-        <div class="wrapper">
           <h3>Personal details</h3>
-          <div class="layout-2-column">
-            <div class="key-column">
+          <div class="layout-3-column">
+            <div class="personal-key-column text-emphasized">
               <p>Name:</p>
-              <p>E-mail:</p>
               <p>Telephone Number:</p>
+              <p>E-mail:</p>
               <p>GitHub:</p>
             </div>
-            <div class="value-column">
-
+            <div class="personal-key-column-short text-emphasized">
+              <p>Name:</p>
+              <p>T.Num:</p>
+              <p>E-mail:</p>
+              <p>GitHub:</p>
+            </div>
+            <div class="personal-value-column">
               <p>Viachaslau Shabaltsiyeu</p>
               <p><a href="tel:+375292530296">+375 (29) 253-02-96</a></p>
               <p><a href="mailto:enliven001@mail.ru">enliven001@mail.ru</a></p>
               <p><a href="https://github.com/enl001">my GitHub</a></p>
             </div>
+            <img class="personal-image-column" src="Images/Me.jpg" alt="me" width="150" height="150">
           </div>
-          <img src="Images/Me.jpg" alt="me" width="150" height="150">
-        </div>
       </section>
 
+      <span class="local-anchor" id="summary"></span>
       <section class="objective-summary">
-        <div class="wrapper">
           <h3>Objective & Summary</h3>
           <p>Start a career as a web developer in EPAM Systems and in 5 years become an Engineering Lead/ Team Lead.</p>
           <ul class="list">
@@ -53,66 +62,60 @@
             <li>Proficient in an assortment of languages and technologies, including C#/C++, JavaScript, TypeScript, SQL, ASP.Net, Angular</li>
             <li>I have good analytical skills and experience in conducting scientific research</li>
           </ul>
-          <h4>Hobby</h4>
+          <p class="text-emphasized">Hobbies:</p>
           <ul class="list">
             <li>Mountain hiking</li>
             <li>Photography</li>
           </ul>
-        </div>
       </section>
-      <section class="skills">
-        <div class="wrapper">
+      <span class="local-anchor" id="skills"></span>
+      <section class="skills" >
           <h3>Skills</h3>
-          <table class="table">
-            <thead class="table-head">
-              <tr>
-                <th>Lang / Tech</th>
-                <th>Skill</th>
-              </tr>
-            </thead>
-            <tbody class="table-body">
-              <tr>
-                <td>C#</td>
-                <td>++</td>
-              </tr>
-              <tr>
-                <td>Asp.Net</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>HTML5</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>CSS3</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>JavaScript</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>TypeScript</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>Angular 2+</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>Agile</td>
-                <td>+</td>
-              </tr>
-              <tr>
-                <td>Git</td>
-                <td>+</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+          <div class="layout-2-column">
+            <div class="skill-column">
+              <p>C#</p>
+              <div class="skill-bar-background ">
+                <div class="skill-bar skill-csharp">60%</div>
+              </div>
+                <p>Asp.Net</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-asp tooltip">40%</div>
+                </div>
+                <p>HTML5</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-html">40%</div>
+                </div>
+                <p>CSS3</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-css">30%</div>
+                </div>
+                <p>JavaScript</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-js">35%</div>
+                </div>
+            </div>
+            <div class="skill-column">
+              <p>TypeScript</p>
+              <div class="skill-bar-background">
+                <div class="skill-bar skill-ts">35%</div>
+              </div>
+                <p>Angular 2+</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-angular">35%</div>
+                </div>
+                <p>Agile</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-agile">20%</div>
+                </div>
+                <p>Git</p>
+                <div class="skill-bar-background">
+                  <div class="skill-bar skill-git">50%</div>
+                </div>
+            </div>
+          </div>
       </section>
-      <section class="experience">
-        <div class="wrapper">
+      <span class="local-anchor" id="experience"></span>
+      <section class="experience" >
           <h3>Experience</h3>
           <ul class="list">
             <li>“Object-Oriented Programming Fundamentals in C#” (course)</li>
@@ -121,113 +124,98 @@
             <li><a href="https://www.codewars.com/users/enl001">Codewars</a></li>
           </ul>
           <h4>Some code examples</h4>
-          <p><a href="https://www.codewars.com/kata/5629db57620258aa9d000014">Codewars “Strings Mix”</a></p>
+          <div class="code-examples">
+            <p><a href="https://www.codewars.com/kata/5629db57620258aa9d000014">Codewars “Strings Mix”</a></p>
 
-            <code>
-              using System;
-              using System.Collections.Generic;
-              using System.Linq;
-              using System.Text.RegularExpressions;
+ <pre><code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
 
-              public class Mixing
-              {
-                public static string Mix(string s1, string s2)
-                {
-                  s1 = Regex.Replace(s1, "[^a-z]", "");
-                  s2 = Regex.Replace(s2, "[^a-z]", "");
-                  var s1Unic = s1.Distinct().OrderBy(c => c);
-                  var s2Unic = s2.Distinct().OrderBy(c => c);
-                  var merge = s1Unic.Concat(s2Unic).Distinct().OrderBy(c => c);
-                  var sCountChar = new List<string>();
+public class Mixing
+{
+  public static string Mix(string s1, string s2)
+  {
+    s1 = Regex.Replace(s1, "[^a-z]", "");
+    s2 = Regex.Replace(s2, "[^a-z]", "");
+    var s1Unic = s1.Distinct().OrderBy(c => c);
+    var s2Unic = s2.Distinct().OrderBy(c => c);
+    var merge = s1Unic.Concat(s2Unic).Distinct().OrderBy(c => c);
+    var sCountChar = new List<string>();
 
-                  foreach (var c in merge)
-                  {
-                    var count1 = s1.Where(s => s == c).Count();
-                    var count2 = s2.Where(s => s == c).Count();
+    foreach (var c in merge)
+    {
+      var count1 = s1.Where(s => s == c).Count();
+      var count2 = s2.Where(s => s == c).Count();
 
-                    if (count1 <= 1 && count2 <= 1) continue;
-                    if (count1 > count2) sCountChar.Add($"1:{count1}{string.Concat(Enumerable.Repeat(c,count1))}");
-                    if (count1 < count2) sCountChar.Add($"2:{count2}{string.Concat(Enumerable.Repeat(c, count2))}");
-                    if (count1 == count2) sCountChar.Add($"3:{count1}{string.Concat(Enumerable.Repeat(c, count1))}");
-                  }
-                  sCountChar = sCountChar.OrderByDescending(s => s.Substring(2, 1))
-                                         .ThenBy(c => c.Substring(0, 1)).ToList();
+      if (count1 <= 1 && count2 <= 1) continue;
+      if (count1 > count2) sCountChar.Add($"1:{count1}{string.Concat(Enumerable.Repeat(c,count1))}");
+      if (count1 < count2) sCountChar.Add($"2:{count2}{string.Concat(Enumerable.Repeat(c, count2))}");
+      if (count1 == count2) sCountChar.Add($"3:{count1}{string.Concat(Enumerable.Repeat(c, count1))}");
+    }
+    sCountChar = sCountChar.OrderByDescending(s => s.Substring(2, 1))
+                           .ThenBy(c => c.Substring(0, 1)).ToList();
 
-                  var result = new List<string>();
-                  foreach (var item in sCountChar)
-                  {
-                    var r = item;
-                    r = r.Replace("3", "=");
-                    result.Add(r.Remove(2, 1));
-                  }
-                  return string.Join("/",result);
-                }
-              }
-            </code>
-
+    var result = new List<string>();
+    foreach (var item in sCountChar)
+    {
+      var r = item;
+      r = r.Replace("3", "=");
+      result.Add(r.Remove(2, 1));
+    }
+    return string.Join("/",result);
+  }
+} </code></pre>
           <p><a href="https://www.codewars.com/kata/578aa45ee9fd15ff4600090d">Codewars “Sort the odd”</a></p>
 
-            <code>
-              function sortArray(array) {
-                let odd = [];
-                for(const n of array)
-                {
-                  if(n%2!==0) odd.push(n);
-                }
-                odd.sort((a,b)=>{return a-b});
-                let k=0;
-                for(let i= 0; i < array.length; i++)
-                {
-                  if(array[i]%2!==0) {array[i]=odd[k]; k++;}
-                }
-                return array;
-              }
-            </code>
+<pre><code>function sortArray(array) {
+  let odd = [];
+  for(const n of array)
+  {
+    if(n%2!==0) odd.push(n);
+  }
+  odd.sort((a,b)=>{return a-b});
+  let k=0;
+  for(let i= 0; i < array.length; i++)
+  {
+    if(array[i]%2!==0) {array[i]=odd[k]; k++;}
+  }
+  return array;
+}</code></pre>
+          </div >
 
-          <h4>Working experience</h4>
-          <div class="layout-2-column">
-            <div class="key-column">
-              <p>2014 - Present:</p>
-              <p>2012 - 2014:</p>
-            </div>
-            <div class="value-column">
-              <p>Researcher</p>
-              <p>Junior Researcher</p>
-            </div>
+          <p class="text-emphasized">Working experience</p>
+          <div class="working-experience">
+            <p><span class="text-emphasized">2014 - Present:</span><span>Researcher</span></p>
+            <p><span class="text-emphasized">2012 - 2014:</span><span>Junior Researcher</span></p>
           </div>
-        </div>
-        <h4>Other skills</h4>
-        <p>Experienced in such software packages as MATLAB, Mathcad</p>
-      </section>
-      <section class="education">
-        <div class="wrapper">
+
+          <p class="text-emphasized">Other skills</p>
+          <p class="working-experience">Experienced in such software packages as MATLAB, Mathcad</p>
+
+        </section>
+      <span class="local-anchor" id="education"></span>
+      <section class="education" >
           <h3>Education</h3>
-          <div class="layout-2-column">
-            <div class="key-column">
-              <p>2012:</p>
-              <p>2009:</p>
-              <p>2008:</p>
-            </div>
-            <div class="value-column">
-              <p>Researcher. Military Academy of the Republic of Belarus</p>
-              <p>Master of Engineering. Military Academy of the Republic of Belarus</p>
-              <p>Engineer. Telecommunication systems. Military Academy of the Republic of Belarus</p>
-            </div>
-          </div>
-        </div>
+              <p><span class="text-emphasized">2012:</span><span>Researcher. Military Academy of the Republic of Belarus</span></p>
+              <p><span class="text-emphasized">2009:</span><span>Master of Engineering. Military Academy of the Republic of Belarus</span></p>
+              <p><span class="text-emphasized">2008:</span><span>Engineer. Telecommunication systems. Military Academy of the Republic of Belarus</span></p>
+
+
       </section>
-      <section class="english">
-        <div class="wrapper">
+      <span class="local-anchor" id="english"></span>
+      <section class="english" >
+
           <h3>English</h3>
           <ul class="list">
             <li>A2+ EPAM Training Center Test (19.01.2020)</li>
             <li>State cultural and leisure institution “Central House of Officers of the Armed Forces of the Republic of Belarus”. “FCE” program (1136 class hours). 2011</li>
           </ul>
-        </div>
       </section>
     </main>
 <footer class="footer">
-
+    <p>&copy; All rights reserved, 2020</p>
 </footer>
+</div>
   </body>
 </html>
